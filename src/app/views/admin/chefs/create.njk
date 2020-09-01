@@ -1,0 +1,25 @@
+{% extends "header.njk" %}
+
+{% block content %}
+    <form action="/admin/chefs" method="post">
+
+        <div class="container-create">
+
+            <div class="title-admin">
+                <h2>Criando Chef</h2>
+                <button class="btn-save" type="submit">Salvar chef</button>
+            </div>
+
+            <div class="recipe-admin">
+                <h4>Nome</h4>
+                <input type="text" name="name" value="" class="input-create">
+            </div>
+
+            <div class="recipe-admin">
+                <h4>Avatar</h4>
+                <input type="text" name="avatar_url" value="" class="input-create">
+            </div>
+
+        </div>
+    </form>
+{% endblock %}
